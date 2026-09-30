@@ -35,7 +35,9 @@ ln -s '/mnt/user-data-volA/data40/1/d/8/dataset_1d806400-9853-455e-b247-1460583a
 ```
 
 ## Methods section 2.2 (Gene methylation profile building):
-The script from the poly-CpG GitHub by the same GitHub Author to this one was modified for the extraction of gene context for the methylation from the GTF file via a sliding window approach - available in the methods_2-2.py file within the github. 
+A python script (csv_maker.py) for the data-manipulation of the methylation files from Galaxy Australia into a comprehensive report with coverage, methylation type, genome position, strand, chromosome, count methylated and count of unmethylated. 
+
+The script from the poly-CpG GitHub by the same GitHub Author to this one was modified for the extraction of gene context for the methylation from the GTF file via a sliding window approach - available in the gene_meth.py file within the github. 
 
 ## Methods section 2.3 (Chicken genome cross species comparison):
 The methylation profile of the chicken reads and Golden Eagle reads were compared against the galGal6 genome of chickens. The section is divided into multiple scripts to best reflect the repetitive use of scripts throughout the study. 
