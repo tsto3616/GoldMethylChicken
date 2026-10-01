@@ -85,7 +85,7 @@ for chr_name, df_chr in compressed_cds.groupby("chromosome"):
         compressed_cds.loc[idxs[-1], "reg_start"] = mids[-1]
 
 # load the file for the gene annotation
-annot = pd.read_csv("D:/bird_methylome/IE/IE_galGal6/gold_galGal6_merged.csv")
+annot = pd.read_csv("data/IE_galGal6/IE_2_H_merged.csv")
 
 # just to check that the result is ok
 print(annot["chromosome"].head(5))
@@ -122,11 +122,16 @@ for (chromosome, strand), pos_grp in annot.groupby(["chromosome", "strand"]):
         merged = pd.concat(
             [
                 pd.DataFrame([pos_row] * len(matched_ranges)).reset_index(drop=True),
-                matched_ranges.reset_index(drop=True)
+                matched_ranges[
+                    [
+                        "gene_symbol",
+                        "reg_start",
+                        "reg_end"
+                    ]
+                ].reset_index(drop=True)
             ],
             axis=1
         )
-
         matches.append(merged)
 
     if overlap_count == 0:
@@ -143,4 +148,4 @@ genes = result.drop_duplicates(subset=["chromosome", "position", "strand", "gene
 print("number of methylated sites in gene GREAT regions: ", len(sites))
 print("number of methylated genes in GREAT regions: ", len(genes))
 
-result.to_csv("D:/bird_methylome/IE/IE_galGal6/gold_galGal6_merged_with_gene.csv", index=False)
+result.to_csv("data/IE_galGal6/IE_2_H_merged_with_gene.csv", index=False)
