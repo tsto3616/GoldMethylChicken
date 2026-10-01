@@ -1,0 +1,3 @@
+﻿Animal,Sample,Genome,map_perc,unfilt_methyl,filt_methyl,GREAT_methyl_sites,GREAT_methyl_genes,methyl_CpG_perc,methyl_CHG_perc,methyl_CHH_perc,unknown_methyl_perc
+chicken,CHK_1_H,galGal6,12.8,"15,523,927",917,441,625,54.4,1,0.9,2.4
+eagle,IE_1_H,galGal6,,,,,,,,,
