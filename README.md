@@ -4,33 +4,19 @@ Determining the best course of action for comparative species bisulfite methylat
 |Column Name |Meaning|
 ---------------------
 |Animal |Species of the animal featured for the row of the csv table|
----------------------
 |SRA_file |SRA accession file name for the row |
----------------------
 |Sample |The sample name for the reads file (from the SRA metadata) |
----------------------
 |Genome_spp |The species for the reference genome |
----------------------
 |Genome_acc |Accession number for the reference genome |
----------------------
 |map_perc |Efficiency/ success rate of mapping process for Bismark to the reference genome (%) |
----------------------
 |unfilt_methyl |Count of unfiltered methylation sites |
----------------------
 |filt_methyl |Count of filtered methylation sites (methylation has a coverage greater than 10) |
----------------------
 |GREAT_methyl_sites |Number of sites featuring within a gene - under GREAT annotation |
----------------------
 |GREAT_methyl_genes |Number of genes within a methylation site - determined by GREAT annotation |
----------------------
 |methyl_CpG_perc |The proportion of methylation sites with a CpG related methylation annotation |
----------------------
 |methyl_CHG_perc |The proportion of methylation sites with a CHG related methylation annotation |
----------------------
 |methyl_CHH_perc |The proportion of methylation sites with a CHH related methylation annotation |
----------------------
 |unknown_methyl_perc | The proportion of unknown methylation annotations |
----------------------
 
 ## Galaxy Pipeline (with coding commands):
 The Galaxy Australia pipeline all used default settings.
