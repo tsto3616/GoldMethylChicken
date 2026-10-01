@@ -1,5 +1,36 @@
 # GoldMethylChicken
-Determining the best course of action for comparative species bisulfite methylation profiles of published files for a Golden Eagle's and chicken's heart.  
+Determining the best course of action for comparative species bisulfite methylation profiles of published files for 2 Eastern Imperial Eagle (*Aquila heliaca*) and 5 chicken (*Gallus gallus*) hearts. The eagle reads were aligned to the Golden Eagle (*Aquila chrysaetos*) AquChr2 genome (GCF_000766835.1; Aquila_chrysaetos-1.0.2) and the chicken galGal6 genome (GCF_000002315.5; GRCg6a). The masterfile_for_all.csv contains all relevant metadata and summary data with the following definitions for the column names:
+
+|Column Name |Meaning|
+---------------------
+|Animal |Species of the animal featured for the row of the csv table|
+---------------------
+|SRA_file |SRA accession file name for the row |
+---------------------
+|Sample |The sample name for the reads file (from the SRA metadata) |
+---------------------
+|Genome_spp |The species for the reference genome |
+---------------------
+|Genome_acc |Accession number for the reference genome |
+---------------------
+|map_perc |Efficiency/ success rate of mapping process for Bismark to the reference genome (%) |
+---------------------
+|unfilt_methyl |Count of unfiltered methylation sites |
+---------------------
+|filt_methyl |Count of filtered methylation sites (methylation has a coverage greater than 10) |
+---------------------
+|GREAT_methyl_sites |Number of sites featuring within a gene - under GREAT annotation |
+---------------------
+|GREAT_methyl_genes |Number of genes within a methylation site - determined by GREAT annotation |
+---------------------
+|methyl_CpG_perc |The proportion of methylation sites with a CpG related methylation annotation |
+---------------------
+|methyl_CHG_perc |The proportion of methylation sites with a CHG related methylation annotation |
+---------------------
+|methyl_CHH_perc |The proportion of methylation sites with a CHH related methylation annotation |
+---------------------
+|unknown_methyl_perc | The proportion of unknown methylation annotations |
+---------------------
 
 ## Galaxy Pipeline (with coding commands):
 The Galaxy Australia pipeline all used default settings.
