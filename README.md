@@ -1,8 +1,8 @@
 # GoldMethylChicken
 Determining the best course of action for comparative species bisulfite methylation profiles of published files for 2 Eastern Imperial Eagle (*Aquila heliaca*) and 5 chicken (*Gallus gallus*) hearts. The eagle reads were aligned to the Golden Eagle (*Aquila chrysaetos*) AquChr2 genome (GCF_000766835.1; Aquila_chrysaetos-1.0.2) and the chicken galGal6 genome (GCF_000002315.5; GRCg6a). The masterfile_for_all.csv contains all relevant metadata and summary data with the following definitions for the column names:
 
-|Column Name |Meaning|
-|--------------------|
+| Column Name | Meaning |
+| ----------- | ------- |
 | Animal | Species of the animal featured for the row of the csv table|
 | SRA_file |SRA accession file name for the row |
 | Sample | The sample name for the reads file (from the SRA metadata) |
